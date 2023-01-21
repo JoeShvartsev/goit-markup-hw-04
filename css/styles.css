@@ -22,7 +22,9 @@
     --portfolio-card-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
+.icons:active {
+    color:var(--pressed-state--);
+}
 
 /* body global styles */
 body {
@@ -71,24 +73,25 @@ button {
     color: var(--white--);
     border-color: var(--primary-brand--)
 }
-.footer-social-items:is(:hover,:focus) {
+.footer-social-links:is(:focus,:hover) {
     background-color: var(--success--);
 }
-.team-social-items:is(:hover,:focus) {
+.team-social-links:is(:hover,:focus) {
     background-color: var(--pressed-state--);
 }
 .customers-social-items:is(:hover,:focus) {
     border-color: var(--pressed-state--)
 }
-.customers-social-items:is(:hover,:focus) .customers-social-icons {
+.customers-social-links:is(:hover,:focus) .customers-social-icons {
     fill: var(--pressed-state--);
 }
 .radiobutton:is(:hover,:focus) {
     box-shadow:var(--radiobutton-shadow)
 }
-.portfolio-card:hover {
+.portfolio-item:hover {
     box-shadow: var(--portfolio-card-shadow)
 }
+
 
 
 
@@ -236,6 +239,7 @@ button {
     margin-right: 16px;
 }
 .footer-social-links {
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -402,6 +406,7 @@ button {
     margin-right: 24px;
 }
 .team-social-links {
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     display: flex;
